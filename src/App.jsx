@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Routes, Route } from'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
+/* Layout: Pages  ---------------------------*/
+import PagesLayout from './Common/PagesLayout/PagesLayout';
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
 
-export default App
+/* Pages: Primary  ---------------------------*/
+import PrimaryLayout from './Pages/Primary/PrimaryLayout';
+import Home from './Pages/Primary/Home';
+import Staff from './Pages/Primary/Staff';
+import Contact from './Pages/Primary/Contact';
+
+/* Pages: Course work ---------------------------*/
+import CourseWorkLayout from './Pages/CourseWork/CourseWorkLayout';
+import SunAndMoon from './Pages/CourseWork/SunAndMoon/SunAndMoon';
+import Essays from './Pages/CourseWork/Essays/Essays';
+import Responsive from './Pages/CourseWork/Responsive';
+
+const App = () => {
+    return (
+    <Routes>
+        <Route element={ <PagesLayout /> }>
+        <Route element={ <PrimaryLayout /> } path="">
+        <Route element={ <Home /> } path="" />
+        <Route element={ <Staff /> } path="staff" />
+        <Route element={ <Contact /> } path="contact" />
+        </Route>
+
+        <Route element={ <CourseWorkLayout /> } path="course-work">
+        <Route element={ <SunAndMoon /> } path="sun-and-moon" />
+        <Route element={ <Essays /> } path="essays" />
+        <Route element={ <Responsive /> } path="responsive" />
+        </Route>
+        </Route>
+        </Routes>
+        );
+};
+
+export default App;
