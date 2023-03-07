@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
+import Inset from '@/Common/PagesLayout/Inset';
 import StaffList from './StaffList';
 
 const Staff = () => {
