@@ -16,7 +16,6 @@ const Tabbed = () => {
 
     return (
         <TabbedStyled className='Tabbed'>
-Tabbed
             <TabList curTab={ curTab } curTabUpdate={ curTabUpdate } tabs={ tabbedData } />
             <TabContent curTab={ curTab } />
         </TabbedStyled>

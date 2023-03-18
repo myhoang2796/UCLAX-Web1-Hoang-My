@@ -20,7 +20,7 @@ const theClassName = (curTab.id === tab.id) ? 'Tab selected':'Tab';
 export default Tab;
 
 const TabStyled = styled.div`
-background-color: #4991d2;
+background-color: #062139;
 color: darkgray;
 text-align: center;
 cursor: pointer;
@@ -34,7 +34,7 @@ width: clamp(75px, 20%, 150px);
 
 
 &.selected {
-    background-color: darkblue;
+    background-color: #c51a1a;
     color: white;
 }
 `;

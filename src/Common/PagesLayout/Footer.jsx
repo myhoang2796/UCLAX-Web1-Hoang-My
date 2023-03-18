@@ -12,7 +12,7 @@ const Footer = () => {
                     <SiteLogo />
                 </div>
                 <h2>
-                    CrossFit Decimate :: Peace, Love, Unity, Fitness, Chill, and Respect :: Colorado Springs, CO
+                    TEAM TRAINING::LIFE CHANGING::F45 FOR LIFE
                 </h2>
                 <div className="copyright">
                     &copy; 2023. All rights reserved.

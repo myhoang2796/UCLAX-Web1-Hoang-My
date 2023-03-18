@@ -23,7 +23,7 @@ export default Tabcontent;
 
 const TabcontentStyled = styled.div`
 padding: 20px;
-background-color: #4991d2;
+background-color: #062139;
 
 @media ${ breakpoints.isMediumAndUp } {
 
@@ -51,7 +51,7 @@ h3 {
 }
 p {
     font-size: 18px;
-    color: black;
+    color: white;
 margin-bottom: 20px;
 line-height: 150%;
 }

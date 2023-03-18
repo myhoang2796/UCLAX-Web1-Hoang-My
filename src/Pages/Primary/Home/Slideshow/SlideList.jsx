@@ -29,7 +29,7 @@ export default SlideList;
 
 const SlideListStyled = styled.div`
 .carousel .slide .legend {
-    background-color: blue;
+    background-color: #c51a1a;
 }
 
 `;
