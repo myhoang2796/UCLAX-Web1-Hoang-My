@@ -15,10 +15,10 @@ export default Essay;
 
 const EssayStyled = styled.div`
 margin:20px 0px;
-border: solid 2px #4991d2;
+border: solid 2px #2a6395;
 
 h3 {
-    background-color: #4991d2;
+    background-color: #2a6395;
     padding: 10px 20px;
     color: whitesmoke;
     font-size: 20px;
