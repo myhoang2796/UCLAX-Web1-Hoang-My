@@ -39,6 +39,7 @@ display: grid;
 grid-template-columns: 25% 75%;
 
     .logo {  }
+
     .menus {
     display: flex;
 justify-content: flex-end;

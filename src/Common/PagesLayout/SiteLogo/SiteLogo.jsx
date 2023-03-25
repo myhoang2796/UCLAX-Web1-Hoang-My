@@ -16,7 +16,7 @@ export default SiteLogo;
 
 const SiteLogoStyled = styled.div`
     color: #062139;
-    width: 100%;
+    width: 35%;
     height: 100%;
 
     img {

@@ -57,7 +57,7 @@ document.body.classList.remove('modal-open');
 export default Small;
 
 const SmallStyled = styled.div`
-color: white;
+color: #002020;
 
 display: flex;
 justify-content: center;
@@ -77,13 +77,13 @@ max-width: 330px;
     right: 0px;
     bottom: 0px;
 
-    background-color: #034444;
+    background-color: #2a6395;
 
     a {
        display: block;
 
        padding: 10px;
-       border-bottom: 1px solid #999999;
+       border-bottom: 1px solid white;
 
        color: white;
        text-decoration: none;
@@ -91,7 +91,7 @@ max-width: 330px;
        &:hover,
        &:active,
        &:focus {
-        background-color: #043434;
+        background-color: #2a6395;
        }
     }
 }
