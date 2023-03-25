@@ -90,12 +90,11 @@ Error generating stack: `+o.message+`
 
 `,sk="/UCLAX-Web1-Hoang-My/assets/f45-02d583ee.png",Vf=()=>x(lk,{className:"SiteLogo",children:x("img",{src:sk,alt:"f45.png"})}),lk=J.div`
     color: #062139;
-    width: 35%;
     height: 100%;
 
     img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 `,uk=()=>x(ck,{className:"MediumLarge",children:x(wo,{children:ee("div",{className:"row",children:[x("div",{className:"logo",children:x(Vf,{})}),x("div",{className:"menus",children:ee("nav",{className:"mainMenu",children:[x(Nt,{to:"/",end:!0,children:"Home"}),x(Nt,{to:"/staff",children:"Staff"}),x(Nt,{to:"/contact",children:"Contact"}),x(Nt,{to:"/course-work",children:"Course"})]})})]})})}),ck=J.div`
 color: white;
@@ -927,8 +926,8 @@ color: #002020;
 display: flex;
 justify-content: center;
 
-.Sitelogo {
-height: 300px;
+.SiteLogo {
+height: 100px;
 padding: 20px;
 max-width: 330px;
 
@@ -937,8 +936,10 @@ max-width: 330px;
 .mainMenu {
     position: fixed;
 
+    z-index: 1000;
+
     left: 0px;
-    top: 300px;
+    top: 100px;
     right: 0px;
     bottom: 0px;
 
