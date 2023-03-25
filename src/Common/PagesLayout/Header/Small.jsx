@@ -62,8 +62,8 @@ color: #002020;
 display: flex;
 justify-content: center;
 
-.Sitelogo {
-height: 300px;
+.SiteLogo {
+height: 100px;
 padding: 20px;
 max-width: 330px;
 
@@ -72,8 +72,10 @@ max-width: 330px;
 .mainMenu {
     position: fixed;
 
+    z-index: 1000;
+
     left: 0px;
-    top: 300px;
+    top: 100px;
     right: 0px;
     bottom: 0px;
 

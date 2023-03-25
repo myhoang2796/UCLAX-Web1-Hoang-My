@@ -16,11 +16,10 @@ export default SiteLogo;
 
 const SiteLogoStyled = styled.div`
     color: #062139;
-    width: 35%;
     height: 100%;
 
     img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 `;
